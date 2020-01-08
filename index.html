@@ -27,13 +27,9 @@
   <div class="imgbox">
     <img class="center-fit" src="https://wallpaperaccess.com/full/1194086.jpg" />
   </div>
- 
-
   <section>
     <div class="container">
       <div class="row">
-        <h1>Room temperature: <h1 id="temperature"></h1>
-        </h1>
         <h2>Current temperature:</h2>
         <h2 id="current-temperature"></h2>
         <h2>Select a city:</h2>
@@ -45,8 +41,10 @@
           <option value="Tokyo">Tokyo</option>
           <option value="Sydney">Sydney</option>
         </select>
+        <h1>Thermostat: <h1 id="temperature"></h1>
+        </h1>
       </div>
-      <div class="row">
+      <div class="row" id="buttons">
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
         <button id="temperature-reset">reset</button></div>
@@ -54,11 +52,11 @@
       <div class="row">
         <p>
           Power saving mode is <span id="power-saving-status">On</span>
-          <span id="display-usage"></span>
-          <br>
-          <button id="powersaving-on">PSM on</button>
-          <button id="powersaving-off">PSM off</button>
         </p>
+        <span id="display-usage"></span>
+        <br>
+        <button id="powersaving-on">PSM on</button>
+        <button id="powersaving-off">PSM off</button>
       </div>
 
     </div>
@@ -66,7 +64,7 @@
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="src/Thermostat.js"></script>
+  <script src="src/thermostat.js"></script>
   <script src="jquery.js"></script>
 </body>
 
